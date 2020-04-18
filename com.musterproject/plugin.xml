@@ -7,18 +7,30 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="com.musterproject">
+            name="Application Management">
          <property
                name="lifeCycleURI"
                value="bundleclass://com.musterproject/com.musterproject.E4LifeCycle">
          </property>
          <property
-               name="applicationCSS"
-               value="platform:/plugin/com.musterproject/css/default.css">
+               name="appName"
+               value="Application Management">
          </property>
+      </product>
+   </extension>
+   <extension
+         id="appmgmt"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="Application Management">
          <property
                name="appName"
-               value="com.musterproject">
+               value="Application Management">
+         </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://com.musterproject/com.musterproject.E4LifeCycle">
          </property>
       </product>
    </extension>
