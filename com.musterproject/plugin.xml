@@ -16,6 +16,10 @@
                name="applicationCSS"
                value="platform:/plugin/com.musterproject/css/default.css">
          </property>
+         <property
+               name="appName"
+               value="com.musterproject">
+         </property>
       </product>
    </extension>
 
