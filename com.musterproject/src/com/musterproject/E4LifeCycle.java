@@ -22,6 +22,10 @@ public class E4LifeCycle {
 		System.out.println("Context created");
 		try {
 			DatabaseService dbservice = new DatabaseService();
+			dbservice.getConnection();
+			System.out.println("Connection Established");
+			dbservice.insertPortals();
+			System.out.println("Portals inserted");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
