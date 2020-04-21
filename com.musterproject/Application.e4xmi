@@ -26,8 +26,8 @@
     </mainMenu>
     <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="com.musterproject.trimbar.top">
       <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.saveLink" iconURI="platform:/plugin/com.musterproject/icons/save_edit.png" tooltip="Save Link" command="_Ob85sHybEeqov6BV2ODKcA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.open" iconURI="platform:/plugin/com.musterproject/icons/open_in_app.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.saveLink" iconURI="platform:/plugin/com.musterproject/icons/link_add.png" tooltip="Save Link" command="_Ob85sHybEeqov6BV2ODKcA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.open" iconURI="platform:/plugin/com.musterproject/icons/link_delete.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_WdCXcHzsEeqwSf2tcb-tiA" elementId="com.musterproject.toolcontrol.0" contributionURI="bundleclass://com.musterproject/com.musterproject.toolbar.control.SpacerControl">
         <tags>stretch</tags>
