@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
@@ -26,6 +27,9 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
 
+import com.musterproject.controller.Links;
+import com.musterproject.controller.Portals;
+
 public class SamplePart {
 
 	private TreeViewer treeViewer;
@@ -36,20 +40,17 @@ public class SamplePart {
 	
 	@Inject
 	MApplication application;
+	
+	@Inject
+	IEclipseContext context;
 
 	@PostConstruct
 	public void createComposite(Composite parent) {
 		parent.setLayout(new GridLayout(1, false));
 		
-		rootCategory = new Portals("Jobs", null);
-		Portals portalLinkedin = new Portals("LinkedIn",rootCategory);
-		portalLinkedin.addLink(new Links("Accenture Software Engineer", "https://www.linkedin.com/jobs/view/1813655208",portalLinkedin));
-		portalLinkedin.addLink(new Links("SDE II", "https://www.linkedin.com/jobs/view/1808746393",portalLinkedin));
-		rootCategory.addSubCategories(portalLinkedin);
-		Portals portalXing = new Portals("Xing",rootCategory);
-		portalXing.addLink(new Links("Java Fullstack", "https://www.xing.com/jobs/hamburg-java-fullstack-entwickler-nps-57369044?paging_context=search&search_query%5Bkeywords%5D=java&search_query%5Blimit%5D=20&search_query%5Blocation%5D=&search_query%5Boffset%5D=0&search_query%5Bradius%5D=&ijt=jb_18",portalXing));
-		portalXing.addLink(new Links("Java job", "Some URL", portalXing));
-		rootCategory.addSubCategories(portalXing);
+		
+		rootCategory = (Portals) context.get("portals");
+		
 		treeViewer = new TreeViewer(parent);
         treeViewer.setContentProvider(new TreeContentProvider());
         treeViewer.getTree().setHeaderVisible(true);
@@ -57,7 +58,7 @@ public class SamplePart {
 
         TreeViewerColumn viewerColumn = new TreeViewerColumn(treeViewer, SWT.NONE);
         viewerColumn.getColumn().setWidth(300);
-        viewerColumn.getColumn().setText("Names");
+        viewerColumn.getColumn().setText("Application Portals");
         viewerColumn.setLabelProvider(new ColumnLabelProvider());
         treeViewer.setAutoExpandLevel(1);
         treeViewer.setInput(rootCategory);
@@ -81,7 +82,4 @@ public class SamplePart {
 		part.setDirty(false);
 	}
 	
-	/*private List<String> createInitialDataModel() {
-		return Arrays.asList("Sample item 1", "Sample item 2", "Sample item 3", "Sample item 4", "Sample item 5");
-	}*/
 }

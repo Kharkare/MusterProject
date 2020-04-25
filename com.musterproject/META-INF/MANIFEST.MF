@@ -13,7 +13,8 @@ Require-Bundle: javax.inject;bundle-version="0.0.0",
  org.eclipse.e4.ui.di;bundle-version="0.0.0",
  org.eclipse.e4.core.contexts;bundle-version="0.0.0",
  org.eclipse.core.runtime;bundle-version="0.0.0",
- com.musterproject.database;bundle-version="1.0.0"
+ com.musterproject.database;bundle-version="1.0.0",
+ com.musterproject.controller;bundle-version="1.0.0"
 Bundle-ManifestVersion: 2
 Bundle-Activator: com.musterproject.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

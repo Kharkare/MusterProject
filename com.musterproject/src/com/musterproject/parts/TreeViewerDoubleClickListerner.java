@@ -18,6 +18,8 @@ import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 
+import com.musterproject.controller.Links;
+
 public class TreeViewerDoubleClickListerner implements IDoubleClickListener {
 	
 	@Inject
@@ -46,20 +48,6 @@ public class TreeViewerDoubleClickListerner implements IDoubleClickListener {
 			MPartStack stack = (MPartStack)modelService.find("com.musterproject.partstack.browser", application);
 			stack.getChildren().add(part);
 			partService.showPart(part, PartState.ACTIVATE);
-			//modelService.findElements(application,null,MPartStack.class,null);
-			/*for(MPartStack stack:list) {
-				System.out.println(stack.getElementId());
-			}*/
-			
-			/*MPart part = MBasicFactory.INSTANCE.createPart();
-			part.setLabel(selected_link.getLineName());
-			part.setCloseable(true);
-			part.setObject(selected_link);
-			part.setContributionURI("bundleclass://com.musterproject/com.musterproject.parts.BrowserPart");
-			part.setIconURI("platform:/plugin/com.musterproject/icons/icon_browse.png");
-			//List<MPartStack> list = modelService.findElements(application,"com.musterproject.partstack.browser",MPartStack.class,null);
-			
-			partService.showPart(part, PartState.ACTIVATE);*/
 			
 		}
 	}

@@ -9,7 +9,7 @@ import org.eclipse.swt.browser.ProgressListener;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.ProgressBar;
 
-import com.musterproject.parts.Links;
+import com.musterproject.controller.Links;
 
 public class ApplicationBrowser extends Browser {
 	

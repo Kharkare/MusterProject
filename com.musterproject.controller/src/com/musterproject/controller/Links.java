@@ -1,4 +1,4 @@
-package com.musterproject.parts;
+package com.musterproject.controller;
 
 public class Links {
 	private String linkName;
@@ -18,7 +18,7 @@ public class Links {
 	}
 	@Override
 	public String toString() {
-		return "Link [lineName=" + linkName + "]";
+		return linkName;
 	}
 	
 	public Portals getParent() {

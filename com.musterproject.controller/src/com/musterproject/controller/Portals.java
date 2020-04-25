@@ -1,4 +1,4 @@
-package com.musterproject.parts;
+package com.musterproject.controller;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,7 @@ public class Portals {
 	private ArrayList<Portals> portalSubCategories = new ArrayList<Portals>();
 	private String portalName;
 	private Portals parent;
+	private int id;
 	public Portals(String portalName,Portals parent) {
 		super();
 		this.portalName = portalName;
@@ -45,9 +46,15 @@ public class Portals {
 	public boolean hasLinks() {
 		return this.links.size()>0;
 	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getId() {
+		return this.id;
+	}
 	@Override
 	public String toString() {
-		return "Portal [portalName=" + portalName + "]";
+		return portalName;
 	}
 	
 }

@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import org.eclipse.jface.viewers.ArrayContentProvider;
 import org.eclipse.jface.viewers.ITreeContentProvider;
 
+import com.musterproject.controller.Portals;
+
 public class TreeContentProvider implements ITreeContentProvider {
 
 	@Override

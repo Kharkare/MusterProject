@@ -133,3 +133,4 @@ Export-Package: com.musterproject.database,
  org.apache.derby.tools,
  org.apache.derby.tools,
  org.apache.derby.vti
+Require-Bundle: com.musterproject.controller;bundle-version="1.0.0"

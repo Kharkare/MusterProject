@@ -6,6 +6,7 @@ import org.eclipse.e4.ui.workbench.lifecycle.PreSave;
 import org.eclipse.e4.ui.workbench.lifecycle.ProcessAdditions;
 import org.eclipse.e4.ui.workbench.lifecycle.ProcessRemovals;
 
+import com.musterproject.controller.Portals;
 import com.musterproject.database.DatabaseService;
 
 /**
@@ -22,9 +23,10 @@ public class E4LifeCycle {
 		System.out.println("Context created");
 		try {
 			DatabaseService dbservice = new DatabaseService();
-			dbservice.getConnection();
+			workbenchContext.set("DBInstance", dbservice);
 			System.out.println("Connection Established");
-			dbservice.insertPortals();
+			Portals allPortals = dbservice.populatePortals();
+			workbenchContext.set("portals", allPortals);
 			System.out.println("Portals inserted");
 		} catch(Exception e) {
 			e.printStackTrace();
