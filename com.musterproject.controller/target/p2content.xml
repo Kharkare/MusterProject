@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='com.musterproject.controller' version='1.0.0.202004260045' singleton='false' generation='2'>
-    <update id='com.musterproject.controller' range='[0.0.0,1.0.0.202004260045)' severity='0'/>
+  <unit id='com.musterproject.controller' version='1.0.0.202004261019' singleton='false' generation='2'>
+    <update id='com.musterproject.controller' range='[0.0.0,1.0.0.202004261019)' severity='0'/>
     <properties size='5'>
       <property name='org.eclipse.equinox.p2.name' value='Controller'/>
       <property name='org.eclipse.equinox.p2.provider' value='MUSTERPROJECT'/>
@@ -10,10 +10,10 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='com.musterproject.controller' version='1.0.0.202004260045'/>
-      <provided namespace='osgi.bundle' name='com.musterproject.controller' version='1.0.0.202004260045'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='com.musterproject.controller' version='1.0.0.202004261019'/>
+      <provided namespace='osgi.bundle' name='com.musterproject.controller' version='1.0.0.202004261019'/>
       <provided namespace='java.package' name='com.musterproject.controller' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='com.musterproject.controller' version='1.0.0.202004260045'>
+      <provided namespace='osgi.identity' name='com.musterproject.controller' version='1.0.0.202004261019'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -24,13 +24,13 @@
       <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='com.musterproject.controller' version='1.0.0.202004260045'/>
+      <artifact classifier='osgi.bundle' id='com.musterproject.controller' version='1.0.0.202004261019'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: com.musterproject.controller&#xA;Bundle-Version: 1.0.0.202004260045&#xA;
+          Bundle-SymbolicName: com.musterproject.controller&#xA;Bundle-Version: 1.0.0.202004261019&#xA;
         </instruction>
       </instructions>
     </touchpointData>

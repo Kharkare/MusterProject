@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Automatic-Module-Name: com.musterproject
 Bundle-SymbolicName: com.musterproject;singleton:=true
 Bundle-Name: Musterproject
-Bundle-Version: 1.0.0.202004260045
+Bundle-Version: 1.0.0.202004261019
 Bundle-ClassPath: .,lib/
 Require-Bundle: javax.inject;bundle-version="0.0.0",org.eclipse.swt;bu
  ndle-version="0.0.0",org.eclipse.e4.ui.model.workbench;bundle-version
