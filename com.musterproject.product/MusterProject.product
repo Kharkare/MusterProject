@@ -3,8 +3,8 @@
 
 <product name="Application Management" uid="MusterProject" id="com.musterproject.appmgmt" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
+
    <configIni use="default">
-      <win32></win32>
    </configIni>
 
    <launcherArgs>
@@ -28,6 +28,7 @@
             winExtraLargeHigh="/com.musterproject.product/images/notebook_256_32_bit.bmp"/>
       </win>
    </launcher>
+
 
    <vm>
    </vm>
