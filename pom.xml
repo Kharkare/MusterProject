@@ -11,15 +11,15 @@
   <eclipse-repo.url>http://download.eclipse.org/releases/2020-03/</eclipse-repo.url>
  </properties>
 
- <repositories>
+<!-- <repositories>
   <repository>
    <id>eclipse-release</id>
    <url>${eclipse-repo.url}</url>
-   <!--<url>file:/C:/destination</url>-->
+   <url>file:/C:/destination</url>
    <layout>p2</layout>
   </repository>
 
- </repositories>
+ </repositories> -->
  
  <modules>
   <module>com.musterproject</module>
@@ -57,6 +57,14 @@
     <artifactId>target-platform-configuration</artifactId>
     <version>${tycho.version}</version>
     <configuration>
+		<resolver>p2</resolver>
+		<target> 
+			<artifact>
+				<groupId>com.musterproject.main</groupId>
+				<artifactId>com.musterproject.target</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</artifact>
+		</target>
      <environments>
       <environment>
        <os>win32</os>
