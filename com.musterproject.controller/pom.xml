@@ -2,9 +2,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>com.musterproject.database</artifactId>
+	<artifactId>com.musterproject.controller</artifactId>
 	<groupId>com.musterproject.main</groupId>
-	<name>Application Management - Database Component</name>
+	<name>Application Management - Controller Component</name>
 	<parent>
  		<groupId>com.musterproject.main</groupId>
  		<artifactId>com.musterproject.main.configuration</artifactId>

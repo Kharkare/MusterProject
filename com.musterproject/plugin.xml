@@ -17,7 +17,7 @@
          </property>
          <property
                name="windowImages"
-               value="images/notebook_16.gif,images/notebook_32.gif,images/notebook_48.gif,images/notebook_64.gif,images/notebook_128.gif,images/notebook_256.gif">
+               value="images/notebook_16.png,images/notebook_32.png,images/notebook_48.png,images/notebook_64.png,images/notebook_128.png,images/notebook_256.png">
          </property>
       </product>
    </extension>
