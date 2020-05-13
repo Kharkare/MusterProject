@@ -43,6 +43,9 @@ public class Portals {
 	public void addLink(Links link) {
 		this.links.add(link);
 	}
+	public boolean removeLink(Links link) {
+		return this.links.remove(link);
+	}
 	public boolean hasLinks() {
 		return this.links.size()>0;
 	}

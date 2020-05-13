@@ -6,10 +6,10 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="Application Management">
+            name="Bookkeeper">
          <property
                name="appName"
-               value="Application Management">
+               value="Bookkeeper">
          </property>
          <property
                name="lifeCycleURI"

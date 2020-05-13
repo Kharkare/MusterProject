@@ -5,13 +5,13 @@
     <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="com.musterproject.partsashcontainer.sample" containerData="3000" horizontal="true">
       <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="com.musterproject.partstack.sample" containerData="2000">
         <tags>NoClose</tags>
-        <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="com.musterproject.part.sample" containerData="" contributionURI="bundleclass://com.musterproject/com.musterproject.parts.SamplePart" label="Sample Part" iconURI="platform:/plugin/com.musterproject/icons/home.png">
+        <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="com.musterproject.part.sample" containerData="" contributionURI="bundleclass://com.musterproject/com.musterproject.parts.ListOfPortalsUI" label="List Of Portals" iconURI="platform:/plugin/com.musterproject/icons/home.png">
           <tags>CTabFolder</tags>
         </children>
       </children>
       <children xsi:type="basic:PartStack" xmi:id="_ScH9AHpKEeqBVOj1PoVoEA" elementId="com.musterproject.partstack.browser" containerData="8000">
         <tags>NoClose</tags>
-        <children xsi:type="basic:Part" xmi:id="_OiGUQHpGEeqBVOj1PoVoEA" elementId="com.musterproject.part.browser" containerData="" contributionURI="bundleclass://com.musterproject/com.musterproject.parts.BrowserPart" label="Test Sample" iconURI="platform:/plugin/com.musterproject/icons/icon_browse.png" closeable="true"/>
+        <children xsi:type="basic:Part" xmi:id="_OiGUQHpGEeqBVOj1PoVoEA" elementId="com.musterproject.part.browser" containerData="" contributionURI="bundleclass://com.musterproject/com.musterproject.parts.BrowserPart" label="Browser" iconURI="platform:/plugin/com.musterproject/icons/icon_browse.png" closeable="true"/>
       </children>
     </children>
     <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
@@ -25,7 +25,7 @@
     <trimBars xmi:id="_6wlLlcgZEeSyMNYR5xypkQ" elementId="com.musterproject.trimbar.top">
       <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
         <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.saveLink" iconURI="platform:/plugin/com.musterproject/icons/link_add.png" tooltip="Save Link" command="_Ob85sHybEeqov6BV2ODKcA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.open" iconURI="platform:/plugin/com.musterproject/icons/link_delete.png"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="com.musterproject.handleditem.trimbar.top.open" label="" iconURI="platform:/plugin/com.musterproject/icons/link_delete.png" tooltip="Remove Link" command="_eDevkJUCEeqK4cBLeWDPuQ"/>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_WdCXcHzsEeqwSf2tcb-tiA" elementId="com.musterproject.toolcontrol.0" contributionURI="bundleclass://com.musterproject/com.musterproject.toolbar.control.SpacerControl">
         <tags>stretch</tags>
@@ -41,7 +41,7 @@
   <handlers xmi:id="_TwhKoHybEeqov6BV2ODKcA" elementId="com.musterproject.handler.saveLinkHandler" contributionURI="bundleclass://com.musterproject/com.musterproject.handlers.SaveLinkHandler" command="_Ob85sHybEeqov6BV2ODKcA"/>
   <handlers xmi:id="_UCK6sHzwEeqwSf2tcb-tiA" elementId="com.musterproject.handler.browserbackhandler" contributionURI="bundleclass://com.musterproject/com.musterproject.handlers.BrowserBackHandler" command="_yhZSsHzvEeqwSf2tcb-tiA"/>
   <handlers xmi:id="_GLwvEHzxEeqwSf2tcb-tiA" elementId="com.musterproject.handler.browserforwardhandler" contributionURI="bundleclass://com.musterproject/com.musterproject.handlers.BrowserForwardHandler" command="_8t4U0HzvEeqwSf2tcb-tiA"/>
-  <handlers xmi:id="_E1X8YIbgEeqyK6Z7G1UTlQ" elementId="com.musterproject.handler.proxy"/>
+  <handlers xmi:id="_E1X8YIbgEeqyK6Z7G1UTlQ" elementId="com.musterproject.handler.deleteLinkHandler" contributionURI="bundleclass://com.musterproject/com.musterproject.handlers.RemoveLinkHandler" command="_eDevkJUCEeqK4cBLeWDPuQ"/>
   <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="com.musterproject.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
     <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="com.musterproject.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLiMgZEeSyMNYR5xypkQ" elementId="com.musterproject.keybinding.m1a" keySequence="M1+A" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
@@ -56,6 +56,7 @@
   <commands xmi:id="_Ob85sHybEeqov6BV2ODKcA" elementId="com.musterproject.command.saveLinkCmd" commandName="saveLinkCmd"/>
   <commands xmi:id="_yhZSsHzvEeqwSf2tcb-tiA" elementId="com.musterproject.command.browserBackCmd" commandName="browserBackCommand"/>
   <commands xmi:id="_8t4U0HzvEeqwSf2tcb-tiA" elementId="com.musterproject.command.browserForwardCmd" commandName="browserForwardCmd"/>
+  <commands xmi:id="_eDevkJUCEeqK4cBLeWDPuQ" elementId="com.musterproject.command.removeLinkCommand" commandName="Remove Link"/>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

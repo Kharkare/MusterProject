@@ -26,16 +26,13 @@ public class ApplicationBrowser extends Browser {
 			@Override
 			public void changing(LocationEvent event) {
 				// TODO Auto-generated method stub
-				System.out.println("Location is changing");
 				event.doit = true;
 			}
 			
 			@Override
 			public void changed(LocationEvent event) {
 				// TODO Auto-generated method stub
-				System.out.println("Location has changed");
 				event.doit = true;
-				System.out.println("New location is:"+getUrl().toString());
 			}
 		});
 	}
