@@ -30,7 +30,7 @@ import org.eclipse.swt.widgets.TreeItem;
 import com.musterproject.controller.Links;
 import com.musterproject.controller.Portals;
 
-public class SamplePart {
+public class ListOfPortalsUI {
 
 	private TreeViewer treeViewer;
 	private Portals rootCategory;
