@@ -65,7 +65,7 @@ public class ListOfPortalsUI {
         IDoubleClickListener doubleclick_listener =  new TreeViewerDoubleClickListerner();
         ContextInjectionFactory.inject(doubleclick_listener, application.getContext());
         treeViewer.addDoubleClickListener(doubleclick_listener);
-        
+        treeViewer.expandAll();
 		treeViewer.getTree().setLayoutData(new GridData(GridData.FILL_BOTH));
 		application.getContext().set("categories", rootCategory);
 		application.getContext().set("tree", treeViewer);

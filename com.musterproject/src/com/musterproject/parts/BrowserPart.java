@@ -49,9 +49,8 @@ public class BrowserPart {
 	
 	private Links getLinksObject() {
 		TreeViewer viewer = (TreeViewer)this.context.get("tree");
-		Portals portal = (Portals)viewer.getTree().getItem(0).getData();
+		Portals portal = (Portals)viewer.getTree().getItem(1).getData();
 		Links link = portal.getLinks().get(0);
-		System.out.println("First link = "+link);
 		return link;
 	}
 	
