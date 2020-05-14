@@ -8,7 +8,7 @@ Bookmark offers a few key features:
  
 ## Installation
  
-###Prerequisite
+### Prerequisite
 - Java 1.8 or higher
 - Maven 3.6.3 or higher
 - Git version control
